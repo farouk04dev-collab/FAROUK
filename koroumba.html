@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEERK - Association des Élèves et Étudiants de Koroumba</title>
+<style>
+
+:root{--vert:#0a5c36;--or:#f9b233;--blanc:#f5f5f0}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
+body{background:var(--blanc);color:#222}
+header{background:var(--vert);color:white;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+header nav a{color:white;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{background:linear-gradient(rgba(10,92,54,0.85),rgba(10,92,54,0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');background-size:cover;color:white;text-align:center;padding:80px 20px}
+.hero h1{font-size:38px} .hero h2{font-weight:400;margin:15px 0;color:var(--or)}
+.btn{background:var(--or);color:var(--vert);padding:12px 28px;border-radius:30px;font-weight:bold;text-decoration:none;display:inline-block;margin-top:15px;border:none;cursor:pointer}
+section{padding:55px 5%}
+.titre{text-align:center;color:var(--vert);font-size:32px;margin-bottom:10px}
+.sous-titre{text-align:center;margin-bottom:35px;color:#666}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.carte{background:white;padding:25px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+.carte h3{color:var(--vert);margin-bottom:8px}
+/* PRESIDENT */
+.president{display:flex;flex-wrap:wrap;gap:30px;align-items:center;background:white;padding:30px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+.president img{width:280px;height:320px;object-fit:cover;border-radius:15px;border:5px solid var(--or)}
+.president-info{flex:1;min-width:280px}
+.president-info h3{color:var(--vert);font-size:28px}
+.badge{background:var(--vert);color:white;padding:5px 12px;border-radius:20px;font-size:12px;display:inline-block;margin:10px 0}
+footer{background:var(--vert);color:white;text-align:center;padding:35px 20px;margin-top:30px}
+/* CHATBOT */
+#chat-btn{position:fixed;bottom:20px;right:20px;background:var(--or);width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:32px;cursor:pointer;box-shadow:0 5px 20px rgba(0,0,0,0.3);z-index:999}
+#chat-box{position:fixed;bottom:95px;right:20px;width:360px;height:480px;background:white;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,0.3);display:none;flex-direction:column;overflow:hidden;z-index:999}
+#chat-header{background:var(--vert);color:white;padding:14px 18px;font-weight:bold;display:flex;justify-content:space-between}
+#chat-messages{flex:1;padding:15px;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 14px;border-radius:14px;max-width:85%;font-size:14px;line-height:1.4}
+.bot{background:#eef2ee;align-self:flex-start}
+.user{background:var(--vert);color:white;align-self:flex-end}
+#chat-input{display:flex;border-top:1px solid #ddd}
+#chat-input input{flex:1;border:none;padding:14px;outline:none}
+#chat-input button{border:none;background:var(--or);padding:0 18px;font-weight:bold;cursor:pointer}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h2>🌍AEEK</h2>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#president">Président des élèves et etudiants</a>
+        <a href="#association">Association</a>
+        <a href="#contact">Contact</a>
+    </nav>
+ </header>
+
+<div class="hero" id="accueil">
+    <h1>Association des Élèves et Étudiants de Koroumba</h1>
+    <h2>AEEK - Unis pour le développement de Koroumba</h2>
+    <p>Éducation - Solidarité - Développement</p>
+    <a href="#association" class="btn">Devenir Membre <small-x>⇒</small-x></a>
+</div>
+
+<!-- SECTION PRESIDENT DU VILLAGE -->
+<section id="president">
+    <h2 class="titre">Le Mot du président </h2>
+    <p class="sous-titre">Notre garant traditionnel et soutien de la jeunesse</p>
+    
+    <div class="president">
+        <!-- ICI TU METS LA PHOTO DU PRESIDENT -->
+        <img src="/Users/owner/Desktop/Capture d’écran 2026-07-31 à 16.02.35.pngß" alt="Photo du Président du village de Koroumba">
+    
+        
+        <div class="president-info">
+            <h3>SANGARE KRAMOGO</h3>
+            <span class="badge">Président des élèves et etudiants de Koroumba</span>
+            <p style="margin-top:15px;line-height:1.7">
+                "Je salue l'initiative de nos frères et soeurs, élèves et étudiants de Koroumba. Nous sommes l'avenir de notre village. 
+                Cette association est une fierté pour nous. Je nous encourage à rester unis, solidaires et à travailler pour le développement de Koroumba.
+                <br><br>
+                Ma porte reste toujours ouverte pour nous accompagner. Que Dieu bénisse Koroumba et sa jeunesse."
+            </p>
+            <p style="margin-top:15px;font-style:italic;color:var(--vert);font-weight:bold">- Président des élèves et etudiants de Koroumba -</p>
+        </div>
+    </div>
+</section>
+
+<section id="association" style="background:white">
+    <h2 class="titre">Notre Association</h2>
+    <p class="sous-titre">Toutes les informations sur l'AEEK</p>
+    <div class="grille">
+        <div class="carte"><h3>🎯 Notre Mission</h3><p>Unir tous les élèves et étudiants de Koroumba, s'entraider pour la réussite scolaire et participer au développement du village.</p></div>
+        <div class="carte"><h3>👁️ Notre Vision</h3><p>Faire de Koroumba un village modèle grâce à une jeunesse éduquée, solidaire et engagée.</p></div>
+        <div class="carte"><h3>📜 Nos Activités</h3><p>• Sensibilisations <br>• salubrité<br>• Journées d'excellence<br>• Aide aux orphelins<br>• Tournoi de foot inter-quartier</p></div>
+        <div class="carte"><h3>👥 Bureau Exécutif</h3><p><b>Président AEEK:</b> SANGARE KARAMOGO<br><b>Vice-Président:</b> Mr x <br><b>Secrétaire:</b> SANGARE SIAKA<br><b>Trésorière:</b>SANGARE FATOUMATA</p></div>
+        <div class="carte"><h3>📝 Adhésion</h3><p><b>Cotisation:</b> 2.000 FCFA / mois<br><b>Adresse:</b> nom, prénoms et niveau(x) d'études.<br>Contact: +225 xx XX XX XX</p></div>
+        <div class="carte"><h3>📅 Prochain Événement</h3><p><b>Fête de l'année 2027</b><br>Date: depend du president <br>Lieu: Place publique de Koroumba. Remise de kits scolaires.</p></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="titre">Contact & Siège</h2>
+    <div class="grille">
+        <div class="carte"><h3>📍 Canton</h3><p>Fladougou, Koroumba<br>Région du kabadougou</p></div>
+        <div class="carte"><h3>📞 AEEK</h3><p>Président: +225 05 55 94 42 07 <br>WhatsApp: +225 05 55 94 42 07</p></div>
+        <div class="carte"><h3>📧 Email</h3><p>aeek.koroumba@gmail.com<br>Facebook: AEEK Koroumba Officiel</p></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AEEK - Association des Élèves et Étudiants de Koroumba<br>Développé pour la jeunesse de Koroumba</p>
+</footer>
+
+<!-- CHATBOT -->
+<div id="chat-btn" onclick="toggleChat()">💬</div>
+<div id="chat-box">
+    <div id="chat-header"><span>Assistant AEEK 🤖</span><span style="cursor:pointer" onclick="toggleChat()">✖</span></div>
+    <div id="chat-messages">
+        <div class="msg bot">Y DENSSE(Akwaba)! 🙏 Je suis l'assistant de Koroumba. Pose-moi une question sur l'association, le chef, l'adhésion, les activités...</div>
+    </div>
+    <div id="chat-input">
+        <input type="text" id="user-input" placeholder="Votre question..." onkeypress="if(event.key==='Enter') envoyer()">
+        <button onclick="envoyer()">Envoyer</button>
+    </div>
+</div>
+
+<script>
+const connaissances = [
+    { mots: ["président", "Président des élèves et etudiants ", "KRAMOGO", "roi"], reponse: "Notre Chef est SANGARE KRAMOGO, le président des élèves et étudiants de fladougou Koroumba. C'est notre autorité traditionnelle et le parrain de l'AEEK. Sa photo est sur le site." },
+
+    { mots: ["adhesion", "devenir membre", "cotisation", "inscrire"], reponse: "Pour adhérer à l'AEERK : 2.000F par an + 1 photo + carte d'élève/étudiant. Contacte le Président au 07 XX XX XX. Ouvert à tous les enfants de Koromba." },
+
+    { mots: ["koroumba", "ou", "village", "situe"], reponse: "Koroumba est notre beau village. L'association regroupe tous ses fils et filles élèves et étudiants où qu'ils soient à Abidjan, Bouaké, Korhogo..." },
+
+    { mots: ["activite", "faites", "programme"], reponse: "Nous faisons : Cours de vacances en Août, Journée de l'Excellence, Reboisement, Aide aux parents démunis, et tournoi de football à chaque vacances." },
+
+    { mots: ["bureau", "president aeerk", "qui dirige"], reponse: "Président AEEK : Mr sangaré kramogo. Vice : sangaré issouf. Secrétaire : sangaré siaka. Le bureau est élu chaque 1 an." },
+
+    { mots: ["contact", "telephone", "whatsapp"], reponse: "Contact AEEK : 05 55 94 42 07 (Président) / WhatsApp 05 55 94 42 07. Email : aeerk.koroumba@gmail.com" },
+    
+    { mots: ["aide", "soutien", "bourse"], reponse: "L'AEEK aide ses membres avec des prises en charge, des cours de soutien gratuits et des conseils d'orientation." }
+];
+function toggleChat(){let b=document.getElementById("chat-box");b.style.display=b.style.display==="flex"?"none":"flex"}
+function envoyer(){
+    let input=document.getElementById("user-input"); let txt=input.value.trim(); if(!txt) return;
+    ajouter(txt,"user"); input.value="";
+    let low=txt.toLowerCase(); let rep="Je n'ai pas bien compris. Essaie : 'chef du village', 'adhésion', 'activités', 'contact', 'Koromba'";
+    for(let k of connaissances){for(let m of k.mots){if(low.includes(m)){rep=k.reponse;break}}}
+    setTimeout(()=>ajouter(rep,"bot"),500);
+}
+function ajouter(t,type){let d=document.createElement("div");d.className="msg "+type;d.innerText=t;document.getElementById("chat-messages").appendChild(d);document.getElementById("chat-messages").scrollTop=9999}
+</script>
+
+</body>
+</html>
